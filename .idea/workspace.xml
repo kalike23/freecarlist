@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f5e86a-88d5-4c84-b9c2-140c1fe9d039" name="Changes" comment="" />
+    <list default="true" id="f9f5e86a-88d5-4c84-b9c2-140c1fe9d039" name="Changes" comment="001">
+      <change afterPath="$PROJECT_DIR$/myproject/myapp/views_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/myapp/add_free_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/myapp/add_free_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/myapp/edit_free_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/myapp/edit_free_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/myapp/free_table_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/myapp/free_table_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/templates/myapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/templates/myapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Admin/PycharmProjects/freecarlist",
+    "last_opened_file_path": "C:/Users/Admin/PycharmProjects/freecarlist/myproject/myapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,6 +58,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\PycharmProjects\freecarlist\myproject\myapp" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.edit_free_table.html">
     <configuration name="add_free_table.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/freecarlist/myproject/myapp/templates/myapp/add_free_table.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -78,11 +92,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735893671366</updated>
-      <workItem from="1735893691413" duration="15185000" />
+      <workItem from="1735893691413" duration="20128000" />
     </task>
+    <task id="LOCAL-00001" summary="001">
+      <option name="closed" value="true" />
+      <created>1736145241867</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736145241867</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="001" />
+    <option name="LAST_COMMIT_MESSAGE" value="001" />
   </component>
 </project>

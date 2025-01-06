@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-!265@jy9z!m7&!dz(f0v#u_*squ0x1a*&$s1l(5-kbd%v-4%fb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 # 登录成功后的跳转地址
+LOGIN_URL = '/login/'  # 设置自定义的登录路径
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login/'  # 退出后跳转到登录页面
 
