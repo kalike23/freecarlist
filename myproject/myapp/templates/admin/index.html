@@ -1,0 +1,18 @@
+{% extends "admin/index.html" %}
+
+{% block content_title %}
+    <h1>欢迎来到自定义后台管理系统</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="dashboard-content">
+        <p>这里可以放一些自定义的内容，比如系统概况、统计信息等。</p>
+        <div class="quick-links">
+            <h3>快捷操作</h3>
+            <ul>
+                <li><a href="{% url 'admin:app_name_modelname_add' %}">添加新数据</a></li>
+                <li><a href="/admin/logout/">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

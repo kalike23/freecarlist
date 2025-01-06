@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if free_table %}编辑{% else %}添加{% endif %}免费记录</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="text-primary mb-4 text-center">{% if free_table %}编辑{% else %}添加{% endif %}免费记录</h2>
+        <div class="card shadow p-4">
+            <form method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="car_no" class="form-label">车牌号:</label>
+                    <input type="text" id="car_no" name="car_no" class="form-control" value="{{ free_table.car_no|default:'' }}" placeholder="请输入车牌号">
+                </div>
+                <div class="mb-3">
+                    <label for="reason" class="form-label">免费原因:</label>
+                    <input type="text" id="reason" name="reason" class="form-control" value="{{ free_table.reason|default:'' }}" placeholder="请输入免费原因">
+                </div>
+                <div class="mb-3">
+                    <label for="other" class="form-label">备注:</label>
+                    <textarea id="other" name="other" class="form-control" rows="4" placeholder="请输入备注">{{ free_table.other|default:'' }}</textarea>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-success">保存</button>
+                    <a href="{% url 'free_table_list' %}" class="btn btn-secondary">返回</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="mt-5 text-center text-muted">
+        <p>&copy; 临时免费车辆管理系统</p>
+    </footer>
+</body>
+
+</html>

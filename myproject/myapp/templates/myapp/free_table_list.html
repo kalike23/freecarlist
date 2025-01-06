@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>临时免费表列表</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="text-primary">临沂公司临时免费车辆列表</h2>
+            <a href="{% url 'add_free_table' %}" class="btn btn-success">添加新记录</a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>车牌号</th>
+                        <th>免费原因</th>
+                        <th>备注</th>
+                        <th class="text-center">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in free_tables %}
+                    <tr>
+                        <td>{{ item.car_no }}</td>
+                        <td>{{ item.reason }}</td>
+                        <td>{{ item.other }}</td>
+                        <td class="text-center">
+                            <a href="{% url 'edit_free_table' item.id %}" class="btn btn-primary btn-sm me-2">编辑</a>
+                            <a href="{% url 'delete_free_table' item.id %}" class="btn btn-danger btn-sm" onclick="return confirm('确认删除该记录吗？');">删除</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        {% if free_tables|length == 0 %}
+        <div class="alert alert-warning text-center mt-3">暂无记录！</div>
+        {% endif %}
+    </div>
+
+    <footer class="mt-5 text-center text-muted">
+        <p>&copy; 临时免费车辆管理系统</p>
+    </footer>
+</body>
+
+</html>
